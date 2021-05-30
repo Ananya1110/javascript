@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript events</title>
+</head>
+<body>
+    <Script>
+        function buttonClick()
+        {
+            console.log("button clicked");
+            console.log(this);
+            this.innerHTML= Date();
+        }
+        function handleKeyDown(event)
+        {
+            console.log("key pressed");
+            console.log(event);
+        }
+    </Script>
+    <button onclick="buttonClick(this)">click to know time</button>
+    <button onmouseuver="console.log("hovered over")">hover over me</button>"
+    <input placeholder="input something" onkeydown="handleKeyDown()"/>
+</body>
+</html>
