@@ -41,3 +41,10 @@ console.log(strength.length);
 console.log(strength);
 totalStrength = strength.reduce(reduceSum);
 console.log("Total Strength : ",totalStrength);
+let mock_data_reduced =mock_data.reduce((total,currentValue,index)=>{
+    console.log(index);
+    console.log();
+    return{strength:total.Strength+currentValue.strength }
+    console.log("Total strength:")
+    console.log(JSON.stringify(mock_data_reduced))
+}
